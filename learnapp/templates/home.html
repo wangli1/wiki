@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ form.media }}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/my.css">
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="head"></div>
+    <br>
+    <h1>wangli<h1>
+    {{ value }}
+             <form action="" method="post">
+                 {% csrf_token %}
+        <table>
+
+            {{ form.as_table}}
+        </table>
+      <input type="submit" value="Submit"></form>
+</body>
+</html>
